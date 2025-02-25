@@ -36,10 +36,13 @@ nav {
   padding: 0 20px;
   width: 1200px;
   height: 100%;
+  span {
+    color: #00ff44;
+  }
   h1 {
     font-size: 1.5rem;
     &::first-letter {
-      color: #2200ff;
+      color: #00ff44;
     }
   }
   ul {
