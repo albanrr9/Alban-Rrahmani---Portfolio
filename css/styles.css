@@ -96,6 +96,9 @@ main {
     max-width: 1200px;
     min-height: calc(100vh - 60px);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
@@ -115,6 +118,9 @@ main {
     h1 {
       font-size: 2rem;
       font-weight: 700;
+    }
+    span {
+      color: #00ff44
     }
     h2 {
       font-size: 1.5rem;
@@ -140,6 +146,52 @@ main {
   }
 }
 
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	position: relative;
+  top: -50px;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #fff;
+  	border-bottom: 2px solid #fff;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
 .skills {
   width: 100%;
   height: 100%;
@@ -150,6 +202,9 @@ main {
   h1 {
     font-size: 2rem;
     font-weight: 700;
+  }
+  span {
+    color: #00ff44;
   }
 }
 
@@ -163,5 +218,8 @@ main {
   h1 {
     font-size: 2rem;
     font-weight: 700;
+  }
+  span {
+    color: #00ff44;
   }
 }
