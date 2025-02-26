@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alban Rrahmani - Portfolio</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <h1><span>A</span>lban <span>Rr</span>ahmani</h1>
-      <ul>
-        <li><a href="#profile"><span>P</span>rofile</a></li>
-        <li><a href="#skills"><span>S</span>kills</a></li>
-        <li><a href="#projects"><span>P</span>rojects</a></li>
-      </ul>
+      <div class="nav-links">
+        <button onclick="scrollToSection('profile')"><span>P</span>rofile</button>
+        <button onclick="scrollToSection('skills')"><span>S</span>kills</button>
+        <button onclick="scrollToSection('projects')"><span>P</span>rojects</button>
+        <button onclick="scrollToSection('contact')"><span>C</span>ontact</button>
+      </div>
     </nav>
   </header>
   <main>
@@ -25,14 +27,14 @@
           <h2>Web Developer and Software Engineer</h2>
         </div>
         <div class="profile-picture">
-          <img src="/img/profile.png" alt="Alban Rrahmani">
+          <img src="img/profile.webp" alt="Alban Rrahmani">
         </div>
       </div>
       <div class="scroll"></div>
     </section>
     <section id="skills">
       <div class="skills-img">
-        <img src="/img/skills.svg" alt="Skills">
+        <img src="img/skills.svg" alt="Skills">
       </div>
       <div class="skills">
         <h2><span>S</span>kills</h2>
@@ -49,11 +51,38 @@
     <section id="projects">
       <div class="projects">
         <h2><span>P</span>rojects</h2>
-        <ul>
-          <li>Project 1: Description of project 1</li>
-          <li>Project 2: Description of project 2</li>
-          <li>Project 3: Description of project 3</li>
-        </ul>
+      </div>
+      <div class="projects-gallery">
+        <div class="project">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://placehold.co/400x300/" alt="">
+          </a>
+        </div>
+        <div class="project">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://placehold.co/400x300/" alt="">
+          </a>
+        </div>
+        <div class="project">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://placehold.co/400x300/" alt="">
+          </a>
+        </div>
+        <div class="project">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://placehold.co/400x300/" alt="">
+          </a>
+        </div>
+        <div class="project">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://placehold.co/400x300/" alt="">
+          </a>
+        </div>
+        <div class="project">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://placehold.co/400x300/" alt="">
+          </a>
+        </div>
       </div>
     </section>
     <section id="contact">
