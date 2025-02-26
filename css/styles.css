@@ -34,6 +34,7 @@ header {
   z-index: 1000;
   color: #fff;
   background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -59,6 +60,7 @@ nav {
     height: 100%;
     li {
       list-style: none;
+      display: flex;
       a {
         text-decoration: none;
         font-size: 1rem;
@@ -122,7 +124,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     h1 {
       font-size: 2rem;
       font-weight: 700;
@@ -217,7 +219,7 @@ main {
   h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    align-self: flex-end;
+    align-self: flex-start;
   }
   span {
     color: #00ff44;
@@ -226,10 +228,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    direction: rtl;
   }
   li {
     font-size: 1rem;
+    list-style-position: inside;
   }
 }
 
@@ -262,4 +264,37 @@ main {
   li {
     font-size: 1rem;
   }
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  span {
+    color: #00ff44;
+  }
+  p {
+    font-size: 1rem;
+    a {
+      color: #00ff44;
+      text-decoration: none;
+      transition: color 0.3s;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  scroll-snap-align: start;
 }
