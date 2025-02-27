@@ -279,6 +279,7 @@ main {
       background-color: #333;
       border-radius: 10px;
       transition: transform 0.3s ease-in-out;
+      box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);
       &:hover {
         transform: scale(1.1);
       }
@@ -291,6 +292,7 @@ main {
         text-decoration: none;
         align-items: flex-end;
         padding-bottom: 10%;
+        text-shadow: 3px 3px 5px #00ff4488;
         span {
           color:#00ff44;
         }
