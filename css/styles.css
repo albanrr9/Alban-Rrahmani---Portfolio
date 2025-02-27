@@ -265,9 +265,6 @@ main {
         font-size: inherit;
       }  
     }
-    li {
-      font-size: 1rem;
-    }
   }
   .projects-gallery {
     height: 100%;
@@ -280,15 +277,46 @@ main {
     .project {
       aspect-ratio: 4/3;
       background-color: #333;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
       a {
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 100%;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+        color: #fff;
+        text-decoration: none;
+        align-items: flex-end;
+        padding-bottom: 10%;
+        span {
+          color:#00ff44;
         }
-      }
+      }      
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: overlay;
+      background-position: center;
+    }
+    .project:nth-child(1) {
+      background-image: url(https://api.screenshotone.com/take?access_key=vSjBmtxQrusTzA&url=https%3A%2F%2Fmobileria-behari.com%2F&viewport_width=1600&viewport_height=1200&device_scale_factor=1&format=webp&block_ads=true&block_cookie_banners=true&block_banners_by_heuristics=false&block_trackers=true&timeout=60&wait_until=load&response_type=by_format&image_quality=80);
+    }
+    .project:nth-child(2) {
+      background-image: url(https://api.screenshotone.com/take?access_key=vSjBmtxQrusTzA&url=https%3A%2F%2Falbanrr9.github.io%2FCoder-s-Flix%2F&viewport_width=1600&viewport_height=1200&device_scale_factor=1&format=webp&block_ads=true&block_cookie_banners=true&block_banners_by_heuristics=false&block_trackers=true&timeout=60&wait_until=load&response_type=by_format&image_quality=80);
+    }
+    .project:nth-child(3) {
+      background-image: url(https://api.screenshotone.com/take?access_key=vSjBmtxQrusTzA&url=https%3A%2F%2Falbanrr9.github.io%2FProjekti&viewport_width=1600&viewport_height=1200&device_scale_factor=1&format=webp&block_ads=true&block_cookie_banners=true&block_banners_by_heuristics=false&block_trackers=true&timeout=60&wait_until=load&response_type=by_format&image_quality=80);
+    }
+    .project:nth-child(4) {
+      background-image: url(https://raw.githubusercontent.com/albanrr9/RestaurantPOS/refs/heads/master/Screenshot%202025-02-27%20131233.png);
+    }
+    .project:nth-child(5) {
+      background-image: url(https://placehold.co/200x150/);
+    }
+    .project:nth-child(6) {
+      background-image: url(https://placehold.co/200x150/);
     }
   }
 }
